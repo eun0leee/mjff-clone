@@ -1,7 +1,7 @@
 # 📌 자신이 원하는 사이트 레이아웃 클론
 
-- [카카오 원본 웹사이트](https://www.cjolivenetworks.co.kr/)
-- [클론 웹사이트]()
+- [원본 웹사이트](https://www.cjolivenetworks.co.kr/)
+- [클론 웹사이트](https://ddoyun.github.io/cjolivenetworks-clone/)
 
 ## 🧷 사용 기술
 - HTML/CSS
