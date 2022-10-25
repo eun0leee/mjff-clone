@@ -33,15 +33,12 @@
 - 드롭다운 메뉴
   - JS로만 구현가능한 것이라고 생각했는데, CSS로도 구현가능함을 알게됨.
   - [추가 참고 링크 : 드롭다운 메뉴 마우스오버시 하위메뉴 다운](https://anaide.tistory.com/56)
-- placeholder color
-  - input의 placeholder의 color를 지정해주는 법에 대해 알게됨.
-- nav 태그의 사용 빈도
-  - 한 페이지 내에 nav 태그를 여러 개 사용할 수 있다는 것을 알게됨.
-  - [추가 참고 링크 : <nav> 탐색 구획 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/nav)
 - 스크린리더 사용자 고려
   - `WAI-ARIA` 사용이 익숙치 않았고, 자주 쓰는 것 이외에 다른 태그도 공부해야겠다고 생각함.
   - 드롭다운 메뉴(본 사이트에서는 전체메뉴의 하위메뉴) 제작시, 스크린리더 사용자는 드롭다운 메뉴를 어떻게 인식하는지에 대한 궁금점이 생김.
     - [추가 참고 링크 : Dropdown menu](https://a11y-guidelines.orange.com/en/web/components-examples/dropdown-menu/)
+- 깃 협업에 익숙해지기
+  - 깃 커밋 컨벤션 작성
 
 ## 👉 추가하고 싶은 부분
 
