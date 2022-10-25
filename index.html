@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/reset-css.css" />
 
-    <!-- font -->
+    <!-- Font -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
     <title>무주산골영화제</title>
+    <link rel="icon" type="image/png" href="https://www.mjff.or.kr/kor/img/cmm/fa-mjff.png" />
   </head>
 
   <body>
-    <!-- header -->
+    <!-- Header -->
     <header class="top">
       <h1 class="top-logo">
         <a href="#">
@@ -23,7 +24,7 @@
         </a>
       </h1>
       <nav class="top-nav">
-        <h1 class="sr-only">전체 메뉴</h1>
+        <h2 class="sr-only">전체 메뉴</h2>
         <ul>
           <li class="top-nav-lists">
             <button href="#" class="title">무주산골영화제</button>
@@ -171,7 +172,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title-last">역대영화제</button>
+            <button href="#" class="title">역대영화제</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item">
@@ -212,7 +213,7 @@
       </nav>
     </header>
 
-    <!-- side-nav -->
+    <!-- Side-nav -->
     <nav class="side-nav">
       <h2 class="sr-only">사이드 메뉴</h2>
       <ul>
@@ -245,25 +246,24 @@
       </ul>
     </nav>
 
-    <!-- main -->
-    <main role="main" class="mjff">
-      <section class="mjff-intro">
+    <!-- Main -->
+    <main role="main">
+      <section class="bg-intro">
         <h2 class="sr-only">인삿말</h2>
         <a href="#">
           <p>친구의 마음으로 같은 자리에서 여러분들을 기다리며</p>
         </a>
         <img src="./assets/mjff_intro.jpg" alt="등나무 사진" />
       </section>
-      f
-      <section class="mjff-section container-01">
-        <div class="container-02">
+      <section class="program container-top">
+        <div class="container-both">
           <h2>
             10th Muju
             <br />
             Film Festival
           </h2>
           <h3>하늘과 바람을 벗삼아 숲으로 떠나는 영화소풍</h3>
-          <ul class="mjff-section-container">
+          <ul class="program-container">
             <li class="item">
               <a href="#">
                 <img src="https://www.mjff.or.kr/kor/img/main/main_2022_b_01.jpg" alt="청춘의 십자로 영화 스틸사진" />
@@ -302,10 +302,10 @@
           </ul>
         </div>
       </section>
-      <section class="mjff-story container-01">
-        <div class="container-02">
+      <section class="video container-top">
+        <div class="container-both">
           <h2>더 많은 산골 이야기</h2>
-          <ul class="mjff-story-container">
+          <ul class="video-container">
             <li class="item">
               <a href="#">
                 <span>산골 비디오</span>
@@ -337,27 +337,27 @@
           </ul>
         </div>
       </section>
+
+      <!-- Article -->
+      <article class="post">
+        <h2 class="sr-only">SNS 게시물</h2>
+        <div class="post-search" aria-label="SNS 게시물 검색">
+          <div class="post-search-box">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <div class="post-container">
+          <!--페이스북,유튜브 게시물 연동 구현 필요-->
+        </div>
+        <div class="post-loadmore">
+          <button type="button">SHOW MORE</button>
+        </div>
+      </article>
     </main>
 
-    <!-- article -->
-    <article class="post">
-      <h2 class="sr-only">SNS 게시물</h2>
-      <div class="post-search" aria-label="SNS 게시물 검색">
-        <div class="post-search-box">
-          <input type="text" placeholder="Search" />
-        </div>
-      </div>
-      <div class="post-container">
-        <!--페이스북,유튜브 게시물 연동 구현 필요-->
-      </div>
-      <div class="post-loadmore">
-        <button type="button">SHOW MORE</button>
-      </div>
-    </article>
-
-    <!-- footer -->
+    <!-- Footer -->
     <footer>
-      <div class="container-02">
+      <div class="container-both">
         <div class="ft-logo">
           <img src="./assets/logo_ft.png" alt="무주산골영화제 로고" />
         </div>

@@ -12,11 +12,11 @@ textarea {
 }
 
 /* global css */
-.container-01 {
+.container-top {
   padding: 100px 0;
 }
 
-.container-02 {
+.container-both {
   width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
@@ -56,7 +56,7 @@ textarea {
 
 .top-nav-lists {
   position: relative;
-  padding: 0 17px 0 10px;
+  padding: 0 10px 0 17px;
 }
 
 .top-nav-lists .title {
@@ -71,23 +71,11 @@ textarea {
   text-align: center;
 }
 
-.top-nav-lists .title-last {
-  display: block;
-  height: 60px;
-  padding: 0;
-  border: none;
-  background-color: #fff;
-
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.top-nav-lists .title::after {
+li + li .title::after {
   content: "";
 
   position: absolute;
-  right: 0;
+  left: 0;
 
   width: 8px;
   height: 8px;
@@ -142,7 +130,7 @@ textarea {
   display: block;
 }
 
-/*------------------------- Nav -------------------------*/
+/*---------------------- Side-nav -------------------------*/
 .side-nav {
   position: fixed;
   right: 0;
@@ -152,19 +140,18 @@ textarea {
 
 .side-nav ul {
   width: 150px;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 25px 0 0 25px;
   background-color: #807ace;
+  text-align: center;
 }
 
 .side-nav-list {
   padding: 12px 10px;
-  border-bottom: 0.5px solid #fff;
-  text-align: center;
 }
 
-.side-nav-list:last-child {
-  border-bottom: none;
+.side-nav-list + .side-nav-list {
+  border-top: 0.5px solid #fff;
 }
 
 .side-nav-list a {
@@ -183,16 +170,16 @@ textarea {
 
 /*------------------------- Main -------------------------*/
 
-/* Mjff-intro */
-.mjff-intro {
+/* bg-intro */
+.bg-intro {
   position: relative;
 }
 
-.mjff-intro a {
+.bg-intro a {
   display: block;
 }
 
-.mjff-intro p {
+.bg-intro p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,7 +195,7 @@ textarea {
   text-align: center;
 }
 
-.mjff-intro img {
+.bg-intro img {
   display: block;
   width: 100%;
   max-width: 1760px;
@@ -217,9 +204,9 @@ textarea {
   border-radius: 140px 140px 0 0;
 }
 
-/* Mjff-section */
+/* Program */
 
-.mjff-section h2 {
+.program h2 {
   position: relative;
 
   color: #5f58bf;
@@ -228,7 +215,7 @@ textarea {
   font-weight: 900;
 }
 
-.mjff-section h2::after {
+.program h2::after {
   content: "";
 
   position: absolute;
@@ -240,7 +227,7 @@ textarea {
   background-color: #807ace;
 }
 
-.mjff-section h3 {
+.program h3 {
   margin: 10px 0 0;
 
   font-size: 20px;
@@ -249,12 +236,12 @@ textarea {
   letter-spacing: -1px;
 }
 
-.mjff-section-container {
+.program-container {
   padding: 50px 0 0;
   margin: 0 -15px;
 }
 
-.mjff-section-container .item {
+.program-container .item {
   position: relative;
 
   display: inline-block;
@@ -269,17 +256,17 @@ textarea {
   overflow: hidden;
 }
 
-.mjff-section-container .item img {
+.program-container .item img {
   opacity: 65%;
   border-radius: 20px;
   transition: all 450ms ease-in-out;
 }
 
-.mjff-section-container .item img:hover {
+.program-container .item img:hover {
   transform: scale(1.05);
 }
 
-.mjff-section-container .item .text {
+.program-container .item .text {
   position: absolute;
   bottom: 32px;
   left: 34px;
@@ -291,18 +278,18 @@ textarea {
   letter-spacing: -1px;
 }
 
-.mjff-section-container .item:first-child .text {
+.program-container .item:first-child .text {
   font-size: 34px;
 }
 
-.mjff-section-container .item .text strong {
+.program-container .item .text strong {
   display: block;
   margin-bottom: 10px;
   color: #fff8c8;
   font-size: 18px;
 }
 
-.mjff-section-container .item .text strong::before {
+.program-container .item .text strong::before {
   content: "";
 
   display: inline-block;
@@ -313,9 +300,9 @@ textarea {
   background-color: #fff8c8;
 }
 
-/* Mjff-story */
+/* Video */
 
-.mjff-story h2 {
+.video h2 {
   position: relative;
   color: #5f58bf;
   font-size: 30px;
@@ -324,7 +311,7 @@ textarea {
   letter-spacing: -1px;
 }
 
-.mjff-story h2::after {
+.video h2::after {
   content: "";
 
   position: absolute;
@@ -337,36 +324,36 @@ textarea {
   background: #807ace;
 }
 
-.mjff-story-container {
+.video-container {
   display: flex;
   padding: 46px 0 0;
 }
 
-.mjff-story-container .item {
+.video-container .item {
   width: 25%;
   padding: 15px;
 
   line-height: 1.6;
 }
 
-.mjff-story-container .item a {
+.video-container .item a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mjff-story-container .item img {
+.video-container .item img {
   order: 1;
   width: 100%;
   border-radius: 20px;
   transition: all 450ms ease-in-out;
 }
 
-.mjff-story-container .item img:hover {
+.video-container .item img:hover {
   transform: scale(1.05);
 }
 
-.mjff-story-container .item span {
+.video-container .item span {
   order: 2;
 
   margin-top: 30px;
@@ -376,7 +363,7 @@ textarea {
   color: #5f58bf;
 }
 
-.mjff-story-container .item p {
+.video-container .item p {
   order: 3;
 
   width: 100%;
@@ -476,7 +463,7 @@ footer {
   padding: 36px 0;
 }
 
-footer .container-02 {
+footer .container-both {
   display: flex;
   position: relative;
 }
