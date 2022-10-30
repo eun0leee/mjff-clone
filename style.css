@@ -326,7 +326,7 @@ li + li .title::after {
 
 .video-container {
   display: flex;
-  padding: 46px 0 0;
+  padding-top: 46px;
 }
 
 .video-container .item {
@@ -353,7 +353,7 @@ li + li .title::after {
   transform: scale(1.05);
 }
 
-.video-container .item span {
+.video-container .item a > span {
   order: 2;
 
   margin-top: 30px;
@@ -367,7 +367,7 @@ li + li .title::after {
   order: 3;
 
   width: 100%;
-  margin: 10px auto 0 auto;
+  margin: 10px auto 0;
 
   color: #444;
   font-size: 18px;
