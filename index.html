@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/reset-css.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Font -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>무주산골영화제</title>
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://www.mjff.or.kr/kor/img/cmm/fa-mjff.png" />
+
+    <title>무주산골영화제</title>
   </head>
 
   <body>
@@ -20,14 +24,14 @@
     <header class="top">
       <h1 class="top-logo">
         <a href="#">
-          <img src="./assets/logo.png" alt="무주산골영화제" />
+          <img src="./assets/logo.png" alt="무주산골영화제 로고" />
         </a>
       </h1>
       <nav class="top-nav">
         <h2 class="sr-only">전체 메뉴</h2>
-        <ul>
+        <ul class="top-nav-ul">
           <li class="top-nav-lists">
-            <button href="#" class="title">무주산골영화제</button>
+            <button href="#">무주산골영화제</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item"><a href="#">10TH MJFF 2022</a></li>
@@ -39,7 +43,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">영화 프로그램</button>
+            <button href="#">영화 프로그램</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item"><a href="#">개막작</a></li>
@@ -53,7 +57,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">10주년 특별 프로그램</button>
+            <button href="#">10주년 특별 프로그램</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item"><a href="#">10주년 다큐</a></li>
@@ -63,7 +67,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">상영시간표</button>
+            <button href="#">상영시간표</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item">
@@ -115,7 +119,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">관객 이벤트</button>
+            <button href="#">관객 이벤트</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item"><a href="#">하이브로우 존</a></li>
@@ -127,7 +131,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">예매</button>
+            <button href="#">예매</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item"><a href="#">관람 안내</a></li>
@@ -148,7 +152,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">산골 스토리</button>
+            <button href="#">산골 스토리</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item"><a href="#">프로그래머의 편지</a></li>
@@ -159,7 +163,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">커뮤니티</button>
+            <button href="#">커뮤니티</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item"><a href="#">공지사항</a></li>
@@ -172,7 +176,7 @@
             </div>
           </li>
           <li class="top-nav-lists">
-            <button href="#" class="title">역대영화제</button>
+            <button href="#">역대영화제</button>
             <div class="submenu">
               <ul>
                 <li class="submenu-item">
@@ -248,7 +252,7 @@
 
     <!-- Main -->
     <main role="main">
-      <section class="bg-intro">
+      <section class="image-intro">
         <h2 class="sr-only">인삿말</h2>
         <a href="#">
           <p>친구의 마음으로 같은 자리에서 여러분들을 기다리며</p>
@@ -317,21 +321,32 @@
               <a href="#">
                 <span>산골 비디오</span>
                 <p>제 10회 무주산골영화제 공식 트레일러 <span aria-hidden="true">:</span> 등나무</p>
-                <img src="https://www.mjff.or.kr/kor/artyboard/pds/board/ZCM6_Z52C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-06-02_%EC%98%A4%ED%9B%84_8.59.11.png" alt="" />
+                <img
+                  src="https://www.mjff.or.kr/kor/artyboard/pds/board/ZCM6_Z52C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-06-02_%EC%98%A4%ED%9B%84_8.59.11.png"
+                  alt=""
+                />
               </a>
             </li>
             <li class="item">
               <a href="#">
                 <span>산골 비디오</span>
-                <p><span aria-hidden="true">[</span>세로 인터뷰<span aria-hidden="true">]</span> 우리의 무주산골영화제</p>
-                <img src="https://www.mjff.or.kr/kor/artyboard/pds/board/ZCM6_Z52C/%EC%9A%B0%EB%A6%AC%EC%9D%98_%EB%AC%B4%EC%A3%BC%EC%82%B0%EA%B3%A8%EC%98%81%ED%99%94%EC%A0%9C_%EC%8D%B8%EB%84%A4%EC%9D%BC1.jpg" alt="" />
+                <p>
+                  <span aria-hidden="true">[</span>세로 인터뷰<span aria-hidden="true">]</span> 우리의 무주산골영화제
+                </p>
+                <img
+                  src="https://www.mjff.or.kr/kor/artyboard/pds/board/ZCM6_Z52C/%EC%9A%B0%EB%A6%AC%EC%9D%98_%EB%AC%B4%EC%A3%BC%EC%82%B0%EA%B3%A8%EC%98%81%ED%99%94%EC%A0%9C_%EC%8D%B8%EB%84%A4%EC%9D%BC1.jpg"
+                  alt=""
+                />
               </a>
             </li>
             <li class="item">
               <a href="#">
                 <span>산골 비디오</span>
                 <p>2022년 제 10회 무주산골영화제 프로그램 소개</p>
-                <img src="https://www.mjff.or.kr/kor/artyboard/pds/board/ZCM6_Z52C/%EB%8C%80%EC%A7%80_1_%EC%82%AC%EB%B3%B8_4-100.jpg" alt="" />
+                <img
+                  src="https://www.mjff.or.kr/kor/artyboard/pds/board/ZCM6_Z52C/%EB%8C%80%EC%A7%80_1_%EC%82%AC%EB%B3%B8_4-100.jpg"
+                  alt=""
+                />
               </a>
             </li>
           </ul>
@@ -359,7 +374,7 @@
     <footer>
       <div class="container-both">
         <div class="ft-logo">
-          <img src="./assets/logo_ft.png" alt="무주산골영화제 로고" />
+          <img src="./assets/logo_ft.png" alt="무주산골영화제 흑백 로고" />
         </div>
         <div class="ft-mjffinfo">
           <ul class="ft-mjffinfo-policy">
