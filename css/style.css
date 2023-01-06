@@ -474,7 +474,6 @@ footer .mjffinfo-policy li a {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
-  cursor: pointer;
 }
 
 footer .mjffinfo-policy li:first-child a {
@@ -499,6 +498,7 @@ footer .mjffinfo-policy li:first-child a::after {
 
 footer .mjffinfo-sns {
   display: flex;
+  width: 600px;
 }
 
 footer .mjffinfo-sns li a img {
