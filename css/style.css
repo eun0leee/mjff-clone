@@ -212,32 +212,31 @@ button {
 }
 
 .program h3 {
-  margin: 10px 0 0;
+  margin-top: 10px;
 
   font-size: 20px;
   line-height: 1.5;
   font-weight: 700;
-  letter-spacing: -1px;
 }
 
 .program-container {
-  padding: 50px 0 0;
+  padding-top: 50px;
   margin: 0 -15px;
 }
 
 .program-container .item {
   position: relative;
-
-  display: inline-block;
   margin: 10px;
   border-radius: 20px;
   background-color: #000;
 
+  overflow: hidden;
+
+  /* inline-block */
+  display: inline-block;
   font-size: 0;
   letter-spacing: 0;
   word-spacing: 0;
-
-  overflow: hidden;
 }
 
 .program-container .item img {
@@ -259,21 +258,20 @@ button {
   font-size: 28px;
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: -1px;
 }
 
 .program-container .item:first-child .text {
   font-size: 34px;
 }
 
-.program-container .item .text strong {
+.program-container .item:first-child .text strong {
   display: block;
   margin-bottom: 10px;
   color: #fff8c8;
   font-size: 18px;
 }
 
-.program-container .item .text strong::before {
+.program-container .item:first-child .text strong::before {
   content: '';
 
   display: inline-block;
@@ -292,7 +290,6 @@ button {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.5;
-  letter-spacing: -1px;
 }
 
 .video h2::after {
@@ -347,7 +344,7 @@ button {
   color: #5f58bf;
 }
 
-.video-container .item p {
+.video-container .item span + p {
   order: 3;
 
   width: 100%;
@@ -356,7 +353,6 @@ button {
   color: #444;
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: -1px;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -379,29 +375,29 @@ button {
 
 .post-search-box {
   position: relative;
-  display: inline-block;
-  margin: 0 12px;
-
-  font-size: 0;
-  line-height: 0;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .post-search-box::after {
-  content: url('./assets/post_icon.svg');
+  content: url('/assets/post_icon.svg');
   position: absolute;
   top: 10px;
-  right: 10px;
-  width: 18px;
+  right: 9px;
+
+  width: 20px;
+  cursor: pointer;
 }
 
-.post-search input {
+.post-search-box input {
   width: 200px;
   height: 40px;
   padding: 0 35px 0 15px;
 
   border: 2px solid #cdcdcd;
   border-radius: 5px;
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
 
   color: #333;
   font-size: 11px;
@@ -411,33 +407,31 @@ button {
   cursor: text;
 }
 
-.post-search input:focus {
-  border-color: #000;
-}
-
 .post-search input::placeholder {
   color: #cdcdcd;
 }
 
+.post-search-box input:hover {
+  border-color: #000;
+}
+
 /* Loadmore */
-.post-loadmore {
+.post-showmore {
   text-align: center;
 }
 
-.post-loadmore button {
+.post-showmore button {
   margin: 20px 12px 0;
   padding: 10px 40px;
-  border: none;
   border-radius: 5px;
   background-color: rgb(59, 61, 64);
-  cursor: pointer;
 
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
 }
 
-.post-loadmore button:hover {
+.post-showmore button:hover {
   opacity: 20%;
 }
 
