@@ -1,13 +1,22 @@
+/*------------------------- Global -------------------------*/
+:root {
+  --font: 'NanumSquareRound', '돋움', Dotum, '굴림', Gulim, AppleGothic, sans-serif;
+  --color-main: #807ace;
+  --color-font: #333;
+  --color-nav-after: #edd56e;
+  --trans: all 450ms ease-in-out;
+}
+
 /* font */
 body {
-  font-family: 'NanumSquareRound', '돋움', Dotum, '굴림', Gulim, AppleGothic, sans-serif;
-  color: #333;
+  font-family: var(--font);
+  color: var(--color-font);
 }
 
 button,
 input,
 textarea {
-  font-family: 'NanumSquareRound', '돋움', Dotum, '굴림', Gulim, AppleGothic, sans-serif;
+  font-family: var(--font);
   font-size: 16px;
 }
 
@@ -15,7 +24,6 @@ button {
   cursor: pointer;
 }
 
-/* global css */
 .container-top {
   padding: 100px 0;
 }
@@ -35,7 +43,7 @@ button {
 
   width: 100%;
   margin: 0 auto;
-  border-top: 6px solid rgb(128, 122, 206);
+  border-top: 6px solid var(--color-main);
 }
 
 .top-logo {
@@ -79,7 +87,7 @@ button {
   height: 8px;
   margin: 26px 0;
   border-radius: 50%;
-  background-color: #edd56e;
+  background-color: var(--color-nav-after);
 }
 
 .top-nav-lists .submenu {
@@ -97,14 +105,14 @@ button {
 .top-nav-lists .submenu ul {
   min-width: 150px;
   padding: 16px;
-  border: solid 2px #807ace;
+  border: solid 2px var(--color-main);
   border-radius: 30px 0 30px 30px;
   background: #fff;
 }
 
 .top-nav-lists .submenu-item {
   padding: 8px 10px;
-  color: #111;
+  color: #000;
   font-size: 15px;
   font-weight: 300;
   text-align: left;
@@ -130,7 +138,7 @@ button {
   width: 150px;
   padding: 10px;
   border-radius: 25px 0 0 25px;
-  background-color: #807ace;
+  background-color: var(--color-main);
   text-align: center;
 }
 
@@ -193,7 +201,7 @@ button {
 .program h2 {
   position: relative;
 
-  color: #5f58bf;
+  color: var(--color-main);
   font-size: 50px;
   line-height: 1.2;
   font-weight: 900;
@@ -208,7 +216,7 @@ button {
 
   width: 72%;
   height: 8px;
-  background-color: #807ace;
+  background-color: var(--color-main);
 }
 
 .program h3 {
@@ -242,7 +250,7 @@ button {
 .program-container .item img {
   opacity: 65%;
   border-radius: 20px;
-  transition: all 450ms ease-in-out;
+  transition: var(--trans);
 }
 
 .program-container .item img:hover {
@@ -286,7 +294,7 @@ button {
 
 .video h2 {
   position: relative;
-  color: #5f58bf;
+  color: var(--color-main);
   font-size: 30px;
   font-weight: 700;
   line-height: 1.5;
@@ -302,7 +310,7 @@ button {
 
   width: 76%;
   height: 7px;
-  background: #807ace;
+  background: var(--color-main);
 }
 
 .video-container {
@@ -327,7 +335,7 @@ button {
   order: 1;
   width: 100%;
   border-radius: 20px;
-  transition: all 450ms ease-in-out;
+  transition: var(--trans);
 }
 
 .video-container .item img:hover {
@@ -341,7 +349,7 @@ button {
 
   font-size: 16px;
   font-weight: 700;
-  color: #5f58bf;
+  color: var(--color-main);
 }
 
 .video-container .item span + p {
@@ -350,7 +358,7 @@ button {
   width: 100%;
   margin: 10px auto 0;
 
-  color: #444;
+  color: var(--color-font);
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -399,7 +407,7 @@ button {
   border-radius: 5px;
   background-color: #f0f0f0;
 
-  color: #333;
+  color: var(--color-font);
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 700;
@@ -424,7 +432,7 @@ button {
   margin: 20px 12px 0;
   padding: 10px 40px;
   border-radius: 5px;
-  background-color: rgb(59, 61, 64);
+  background-color: var(--color-font);
 
   color: #fff;
   font-size: 15px;
@@ -557,7 +565,7 @@ footer .mjffinfo-link a {
 
   padding: 12px 24px;
   border-radius: 50px;
-  background-color: #807ace;
+  background-color: var(--color-main);
 
   color: #fff;
   font-size: 16px;
