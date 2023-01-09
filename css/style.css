@@ -136,9 +136,6 @@ header > div {
   display: none;
 }
 
-.mobile-nav-container > nav {
-  display: none;
-}
 /*---------------------- Side-nav -------------------------*/
 .side-nav {
   position: fixed;
@@ -624,7 +621,7 @@ footer .mjffinfo-link a {
   }
 
   .mobile-nav-container nav {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -633,6 +630,8 @@ footer .mjffinfo-link a {
     height: 100vh;
     background-color: #fff;
     z-index: 1;
+
+    overflow: auto;
   }
 
   .mobile-nav-top {
@@ -683,6 +682,10 @@ footer .mjffinfo-link a {
     display: none;
     color: #aaaaaa;
     font-size: 15px;
+  }
+
+  .mobile-nav-lists .submenu-clicked {
+    display: block;
   }
 
   .mobile-nav-lists .submenu li {
