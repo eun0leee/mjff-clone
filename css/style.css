@@ -69,6 +69,8 @@ button {
 .top-nav-lists {
   position: relative;
   padding: 0 10px 0 17px;
+
+  white-space: nowrap;
 }
 
 .top-nav-lists button {
@@ -105,7 +107,7 @@ button {
 }
 
 .top-nav-lists .submenu ul {
-  max-width: 150px;
+  width: fit-content;
   padding: 16px;
   border: solid 2px var(--color-main);
   border-radius: 30px 0 30px 30px;
@@ -151,6 +153,7 @@ button {
   color: #fff;
   font-size: 12px;
   line-height: 1.5;
+  word-break: keep-all;
 }
 
 .side-nav-list img {
@@ -167,34 +170,27 @@ button {
 /*------------------------- Main -------------------------*/
 /* image-intro */
 .image-intro {
-  position: relative;
+  max-width: 1760px;
+  height: 700px;
+  margin: 0 auto;
 }
 
 .image-intro a {
-  display: block;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 100%;
-  padding: 30px 0;
+  height: 100%;
+  border-radius: 140px 140px 0 0;
 
   color: #fff;
   font-size: 62px;
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-}
 
-.image-intro img {
-  display: block;
-  width: 100%;
-  max-width: 1760px;
-  height: 700px;
-  margin: 0 auto;
-  border-radius: 140px 140px 0 0;
+  background: url('/assets/mjff_intro.jpg') center;
 }
 
 /* Program */
@@ -214,7 +210,7 @@ button {
   bottom: 28px;
   right: 0;
 
-  width: 72%;
+  width: 67%;
   height: 8px;
   background-color: var(--color-main);
 }
@@ -228,26 +224,39 @@ button {
 }
 
 .program-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
   padding-top: 50px;
-  margin: 0 -15px;
 }
 
 .program-container .item {
   position: relative;
-  margin: 10px;
   border-radius: 20px;
   background-color: #000;
 
   overflow: hidden;
+}
 
-  /* inline-block */
-  display: inline-block;
-  font-size: 0;
-  letter-spacing: 0;
-  word-spacing: 0;
+.program-container .item:first-child {
+  width: 58%;
+}
+
+.program-container .item:nth-child(2) {
+  width: 36.8%;
+}
+
+.program-container .item:nth-child(3),
+.program-container .item:nth-child(4),
+.program-container .item:nth-child(5) {
+  width: 30.8%;
 }
 
 .program-container .item img {
+  width: 100%;
+  height: 100%;
   opacity: 65%;
   border-radius: 20px;
   transition: var(--trans);
@@ -268,18 +277,14 @@ button {
   line-height: 1.4;
 }
 
-.program-container .item:first-child .text {
-  font-size: 34px;
-}
-
-.program-container .item:first-child .text strong {
+.program-container .item .text strong {
   display: block;
   margin-bottom: 10px;
   color: #fff8c8;
   font-size: 18px;
 }
 
-.program-container .item:first-child .text strong::before {
+.program-container .item .text strong::before {
   content: '';
 
   display: inline-block;
@@ -288,6 +293,10 @@ button {
   margin: 3px 8px 0 0;
   border-radius: 50%;
   background-color: #fff8c8;
+}
+
+.program-container .item:first-child .text {
+  font-size: 34px;
 }
 
 /* Video */
@@ -308,7 +317,7 @@ button {
   right: 0;
   transform: translateY(-50%);
 
-  width: 76%;
+  width: 68%;
   height: 7px;
   background: var(--color-main);
 }
@@ -586,7 +595,186 @@ footer .mjffinfo-link a {
     display: none;
   }
 
+  .image-intro {
+    height: 600px;
+  }
+
+  .image-intro a {
+    font-size: 40px;
+    border-radius: 100px 100px 0 0;
+  }
+
+  .program h2 {
+    font-size: 35px;
+  }
+
+  .video h2 {
+    font-size: 28px;
+  }
+
   .program h2::after {
     width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side-nav {
+    bottom: 0;
+
+    width: 100%;
+  }
+
+  .side-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0;
+  }
+
+  .side-nav-list + .side-nav-list {
+    border-top: 0;
+  }
+
+  .image-intro {
+    height: 500px;
+  }
+
+  .image-intro a {
+    font-size: 30px;
+    border-radius: 80px 80px 0 0;
+  }
+
+  .program-container .item .text,
+  .program-container .item:first-child .text {
+    font-size: 20px;
+  }
+
+  .video h2::after {
+    width: 59%;
+  }
+
+  .video-container {
+    flex-wrap: wrap;
+  }
+  .video-container .item {
+    width: 50%;
+  }
+
+  footer {
+    padding-bottom: 160px;
+  }
+
+  footer .logo {
+    display: none;
+  }
+
+  footer .mjffinfo-policy li a,
+  footer .mjffinfo-contact,
+  footer .mjffinfo-link a {
+    font-size: 13px;
+  }
+
+  footer .mjffinfo-link a {
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .side-nav ul {
+    gap: 15px;
+  }
+
+  .image-intro {
+    height: 400px;
+  }
+
+  .image-intro a {
+    font-size: 25px;
+    border-radius: 60px 60px 0 0;
+  }
+
+  .program h2::after {
+    width: 55%;
+  }
+
+  footer .mjffinfo {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image-intro {
+    height: 300px;
+  }
+
+  .image-intro a {
+    font-size: 23px;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .program h2::after {
+    width: 50%;
+  }
+
+  .program-container .item:nth-child(3),
+  .program-container .item:nth-child(4),
+  .program-container .item:nth-child(5) {
+    width: 30.7%;
+  }
+
+  .video h2::after {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container-padding {
+    padding: 60px 0;
+  }
+  .side-nav ul {
+    gap: 0px;
+  }
+
+  .side-nav-list {
+    padding: 5px;
+  }
+
+  .image-intro {
+    height: 300px;
+  }
+
+  .image-intro a {
+    font-size: 20px;
+    border-radius: 0;
+    word-break: keep-all;
+  }
+
+  .program h2 {
+    font-size: 28px;
+  }
+
+  .program h3 {
+    font-size: 13px;
+  }
+
+  .program-container .item:first-child,
+  .program-container .item:nth-child(2),
+  .program-container .item:nth-child(3),
+  .program-container .item:nth-child(4),
+  .program-container .item:nth-child(5) {
+    width: 100%;
+    height: 200px;
+  }
+
+  .program h2::after,
+  .video h2::after {
+    width: 0;
+  }
+
+  .video-container .item {
+    width: 100%;
   }
 }
