@@ -16,12 +16,15 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://www.mjff.or.kr/kor/img/cmm/fa-mjff.png" />
 
+    <!-- JS -->
+    <script defer src="/main.js"></script>
+
     <title>무주산골영화제</title>
   </head>
 
   <body>
     <!-- Header -->
-    <header class="top">
+    <header class="top container-both">
       <div class="container-width">
         <h1 class="top-logo">
           <a href="#">
@@ -215,6 +218,242 @@
               </div>
             </li>
           </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav-container">
+        <button><img src="/assets/header_nav.svg" alt="모바일 전체메뉴 버튼" /></button>
+        <nav>
+          <h2 class="sr-only">모바일 전체메뉴</h2>
+          <div class="mobile-nav-top">
+            <button>ENG</button>
+            <button>✕</button>
+          </div>
+          <ul class="mobile-nav-ul">
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">무주산골영화제</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu submenu-clicked">
+                <li class="submenu-item"><a href="#">10TH MJFF 2022</a></li>
+                <li class="submenu-item">
+                  <a href="#"> 심사위원<span class="sr-only">및</span><span aria-hidden="true">/</span>시상내역 </a>
+                </li>
+                <li class="submenu-item"><a href="#">협력 파트너</a></li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">영화 프로그램</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#">개막작</a></li>
+                <li class="submenu-item"><a href="#">영화 '창'</a></li>
+                <li class="submenu-item"><a href="#">영화 '판'</a></li>
+                <li class="submenu-item"><a href="#">영화 '락'</a></li>
+                <li class="submenu-item"><a href="#">영화 '숲'</a></li>
+                <li class="submenu-item"><a href="#">영화 '길'</a></li>
+                <li class="submenu-item"><a href="#">상영작 검색</a></li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">10주년 특별 프로그램</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#">10주년 다큐</a></li>
+                <li class="submenu-item"><a href="#">토킹시네마</a></li>
+                <li class="submenu-item"><a href="#">10주년 특별전시</a></li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">상영시간표</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#">
+                    6
+                    <span aria-label="월">.</span>
+                    2
+                    <span class="sr-only">일</span>
+                    (목)
+                  </a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">
+                    6
+                    <span aria-label="월">.</span>
+                    3
+                    <span class="sr-only">일</span>
+                    (금)
+                  </a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">
+                    6
+                    <span aria-label="월">.</span>
+                    4
+                    <span class="sr-only">일</span>
+                    (토)
+                  </a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">
+                    6
+                    <span aria-label="월">.</span>
+                    5
+                    <span class="sr-only">일</span>
+                    (일)
+                  </a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">
+                    6
+                    <span aria-label="월">.</span>
+                    6
+                    <span class="sr-only">일</span>
+                    (월)
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">관객 이벤트</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#">하이브로우 존</a></li>
+                <li class="submenu-item"><a href="#">산골콘서트</a></li>
+                <li class="submenu-item"><a href="#">산골미술관</a></li>
+                <li class="submenu-item"><a href="#">산골책방</a></li>
+                <li class="submenu-item"><a href="#">산골공방</a></li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">예매</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#">관람 안내</a></li>
+                <li class="submenu-item">
+                  <a href="#">무주등나무운동장 1일 입장권</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">
+                    일반상영
+                    <span class="sr-only">및</span>
+                    <span aria-hidden="true">/</span>
+                    토킹 시네마 예매</a
+                  >
+                </li>
+                <li class="submenu-item"><a href="#">셔틀버스 예매</a></li>
+                <li class="submenu-item"><a href="#">산골소풍 예매</a></li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">산골 스토리</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#">프로그래머의 편지</a></li>
+                <li class="submenu-item"><a href="#">산골토크</a></li>
+                <li class="submenu-item"><a href="#">산골비디오</a></li>
+                <li class="submenu-item"><a href="#">산골사진첩</a></li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">커뮤니티</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#">공지사항</a></li>
+                <li class="submenu-item"><a href="#">FAQ</a></li>
+                <li class="submenu-item"><a href="#">숙박안내</a></li>
+                <li class="submenu-item">
+                  <a href="#"><span aria-label="일대일">1:1</span> 문의게시판</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav-lists">
+              <div>
+                <button href="#">역대영화제</button>
+                <button><img class="downarrow" src="/assets/mobile-nav-arrowdown.svg" alt="하위메뉴 보기" /></button>
+              </div>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#">제1회 <span aria-labe="2013년">(2013)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제2회 <span aria-labe="2014년">(2014)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제3회 <span aria-labe="2015년">(2015)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제4회 <span aria-labe="2016년">(2016)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제5회 <span aria-labe="2017년">(2017)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제6회 <span aria-labe="2018년">(2018)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제7회 <span aria-labe="2019년">(2019)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제8회 <span aria-labe="2020년">(2020)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">제9회 <span aria-labe="2021년">(2021)</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#">e<span aria-hidden="true">-</span>book</a>
+                </li>
+                <li class="submenu-item"><a href="#">검색</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <ul class="mjffinfo-sns">
+            <li>
+              <a href="#" title="인스타그램 바로가기">
+                <img src="./assets/ico_instagram.svg" alt="인스타그램 로고" />
+              </a>
+            </li>
+            <li>
+              <a href="#" title="페이스북 바로가기">
+                <img src="./assets/ico_facebook.svg" alt="페이스북 로고" />
+              </a>
+            </li>
+            <li>
+              <a href="#" title="네이버 바로가기">
+                <img src="./assets/ico_naver.svg" alt="네이버 로고" />
+              </a>
+            </li>
+            <li>
+              <a href="#" title="유튜브 바로가기">
+                <img src="./assets/ico_youtube.png" alt="유튜브 로고" />
+              </a>
+            </li>
+            <li>
+              <a href="#" title="트위터 바로가기">
+                <img src="./assets/ico_tweet.svg" alt="트위터 로고" />
+              </a>
+            </li>
+            <li>
+              <a href="#" title="네이버 티비 바로가기">
+                <img src="./assets/ico_navertv.png" alt="네이버 티비 로고" />
+              </a>
+            </li>
+          </ul> -->
         </nav>
       </div>
     </header>
