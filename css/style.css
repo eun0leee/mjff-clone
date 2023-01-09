@@ -38,11 +38,11 @@ button {
 }
 
 /*------------------------- Header -------------------------*/
-.top {
+header {
   border-top: 6px solid var(--color-main);
 }
 
-.top div {
+header > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,9 @@ button {
 }
 
 .top-logo a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 72px;
 }
@@ -130,6 +132,13 @@ button {
   display: block;
 }
 
+.mobile-nav-container {
+  display: none;
+}
+
+.mobile-nav-container > nav {
+  display: none;
+}
 /*---------------------- Side-nav -------------------------*/
 .side-nav {
   position: fixed;
@@ -586,6 +595,10 @@ footer .mjffinfo-link a {
     max-width: 1024px;
   }
 
+  .top-logo {
+    padding: 0;
+  }
+
   .top-logo a img {
     width: 140px;
     height: 34px;
@@ -593,6 +606,87 @@ footer .mjffinfo-link a {
 
   .top-nav {
     display: none;
+  }
+
+  header {
+    display: flex;
+    position: relative;
+  }
+
+  .mobile-nav-container {
+    display: block;
+    padding-top: 20px;
+    color: #222222;
+  }
+
+  .mobile-nav-container > button {
+    width: 26px;
+  }
+
+  .mobile-nav-container nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 55%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .mobile-nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .mobile-nav-top button:first-child {
+    padding: 8px 16px;
+    border: 1px solid #009244;
+    border-radius: 50px;
+    color: #009244;
+    font-size: 14px;
+  }
+
+  .mobile-nav-top button:last-child {
+    font-size: 20px;
+  }
+
+  .mobile-nav-ul {
+    padding: 10px 30px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .mobile-nav-lists {
+    padding: 20px 0;
+  }
+
+  .mobile-nav-lists > div {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .mobile-nav-lists button:first-child {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .mobile-nav-lists .downarrow {
+    width: 18px;
+  }
+
+  .mobile-nav-lists .submenu {
+    display: none;
+    color: #aaaaaa;
+    font-size: 15px;
+  }
+
+  .mobile-nav-lists .submenu li {
+    padding: 10px 0;
   }
 
   .image-intro {
