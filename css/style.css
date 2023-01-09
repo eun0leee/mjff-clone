@@ -162,6 +162,10 @@ header > div {
   word-break: keep-all;
 }
 
+.side-nav-list a:hover {
+  opacity: 50%;
+}
+
 .side-nav-list img {
   display: block;
   margin: 0 auto 6px;
@@ -487,6 +491,10 @@ footer .mjffinfo-policy li {
   padding: 10px 20px;
 }
 
+footer .mjffinfo-policy li:hover {
+  opacity: 50%;
+}
+
 footer .mjffinfo-policy li:first-child {
   position: relative;
   padding-left: 0;
@@ -616,6 +624,10 @@ footer .mjffinfo-link a {
     color: #222222;
   }
 
+  .mobile-nav-container button:hover {
+    opacity: 50%;
+  }
+
   .mobile-nav-container > button {
     width: 26px;
   }
@@ -672,6 +684,7 @@ footer .mjffinfo-link a {
   .mobile-nav-lists button:first-child {
     margin-bottom: 10px;
     font-size: 18px;
+    text-align: left;
   }
 
   .mobile-nav-lists .downarrow {
