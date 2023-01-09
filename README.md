@@ -5,7 +5,7 @@
 ## 👉 Site
 
 - [무주산골영화제](https://www.mjff.or.kr/)
-- [클론사이트](https://earnest-semifreddo-cb1248.netlify.app/)
+- [클론사이트](https://mjffclone.netlify.app)
 
 ## 👉 Stack
 
