@@ -13,4 +13,3 @@
 
 ## 👉 집중한 부분 / 알게된 것 / 해결한 것 / 코드리뷰 등
 - [노션 문서화 기록 링크](https://www.notion.so/eun0leee/HTML-CSS-Clone-Coding-ead95f5fa2bf41c5980b02fb23ef68a0)
-  - 노션에 문서화함
