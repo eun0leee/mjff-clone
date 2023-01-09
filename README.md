@@ -12,5 +12,5 @@
 <img alt="Html" src ="https://img.shields.io/badge/HTML-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="CSS3" src ="https://img.shields.io/badge/CSS3-FF9933.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/>
 
 ## 👉 집중한 부분 / 알게된 것 / 해결한 것 / 코드리뷰 등
-- [HTML, CSS Clone Coding - 노션 문서화 기록 링크](https://www.notion.so/eun0leee/HTML-CSS-Clone-Coding-ead95f5fa2bf41c5980b02fb23ef68a0)
+- [노션 문서화 기록 링크](https://www.notion.so/eun0leee/HTML-CSS-Clone-Coding-ead95f5fa2bf41c5980b02fb23ef68a0)
   - 노션에 문서화함
