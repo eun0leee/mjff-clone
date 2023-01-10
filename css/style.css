@@ -1,7 +1,7 @@
 /*------------------------- Global -------------------------*/
 :root {
   --font: 'NanumSquareRound', '돋움', Dotum, '굴림', Gulim, AppleGothic, sans-serif;
-  --color-main: #807ace;
+  --color-main: #6e65c3;
   --color-font: #333;
   --color-nav-after: #edd56e;
   --trans: all 450ms ease-in-out;
