@@ -18,8 +18,6 @@
 
 ![](https://velog.velcdn.com/images/eun0leee/post/0adf0533-1f48-4c52-aa9e-312cadcbeece/image.gif)
 - 1024px 이하일 때, 햄버거 버튼을 누르면 Main Navigation 이 보입니다. 버튼 클릭과 Main Navigation 안의 리스트 토글은 JavaScript로 구현하였습니다. 클릭될 항목들은 querySelector로 선택했고, 이벤트리스너를 사용하여 클릭 후에 일어날 동작들을 설정해줬습니다.
-
-![](https://velog.velcdn.com/images/eun0leee/post/563fcdaf-48d0-4b53-b373-deba4ab7a3ff/image.gif)
 - 우측 사이드바는 767px 이하가 되면 하단의 고정된 바 형태로 변경됩니다. 창크기에 따른 변화는 media query를 사용하여 구현했고, 하단 바를 고정시킨 것은 `position: fixed`로 구현하였습니다.
 
 ### ✔️ hover
