@@ -41,3 +41,10 @@
 ### ✔️ 웹접근성 고려(WAI-ARIA)
 ![](https://velog.velcdn.com/images/eun0leee/post/cd701476-02f6-4826-9727-2716b7299c57/image.png)
 - `aria-label` 등등 접근성을 향상시킬 수 있는 코드를 쓰고자 노력했습니다. 이 과정이 정말 재밌게 느껴졌고, WAI-ARIA를 자유자재로 쓸 수 있을 만큼 익숙해지고 싶다는 생각을 했습니다. 더 자세히 알고 싶어 따로 [포스팅](https://velog.io/@eun0leee/HTML-WAI-ARIA)하였습니다.
+
+## 👉 해결한 것
+![](https://velog.velcdn.com/images/eun0leee/post/9ddaf2ed-e8c4-4b32-a032-0dab381202c1/image.gif)![](https://velog.velcdn.com/images/eun0leee/post/5bb50397-72c0-44e9-8524-b859c3d62da1/image.png)
+- 프로그램 목록의 이미지 hover시, transition 효과 자연스럽지 못한 문제가 있었습니다.
+
+![](https://velog.velcdn.com/images/eun0leee/post/d8e53350-50b8-477a-9be0-283551655751/image.gif)![](https://velog.velcdn.com/images/eun0leee/post/70054e83-cd21-4563-a107-d4456513063c/image.png)
+- transition을 hover 에 작성하면, hover 될 때만 트랜지션이 적용된다는 것을 알게 됐습니다. mousedown 시의 상태변화에 대해서는 트랜지션이 동작하지 않는 것입니다. 따라서 img에 써줘서, img의 상태가 변화할 때에 대한 트랜지션이 동작하도록 변경하였습니다.
