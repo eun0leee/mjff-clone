@@ -32,7 +32,7 @@
 
 ### ✔️ CSS 선택자와 Box model 속기형
 ![](https://velog.velcdn.com/images/eun0leee/post/0ccebc5c-d3a7-4fd1-b7fb-49a800aa07af/image.png)
-- 내비게이션바 메뉴 사이의 노란색 도형 추가하는 작업시, 마지막요소를 제외하는 것이 어려워, `:last-child`를 써서 마지막요소를 제외하곤 했습니다. 코드리뷰를 통해 `li + li` 처럼 연산자로 처리해주는 방법을 알게돼 좀더 가독성 좋게 처리하였습니다. 또 margin, padding 값을 속기형으로 알맞게 적어주지 않아, 불필요한 코드들이 많았는데 추후 리팩토링을 통해 수정했습니다.
+- 내비게이션바 메뉴 사이의 노란색 도형 추가하는 작업시, 마지막요소를 제외하는 것이 어려워, `:last-child`를 써서 마지막요소를 제외하곤 했습니다. 패스트캠퍼스 과정 중 멘토님의 코드리뷰를 통해 `li + li` 처럼 연산자로 처리해주는 방법을 알게돼 좀더 가독성 좋게 처리하였습니다. 또 margin, padding 값을 속기형으로 알맞게 적어주지 않아, 불필요한 코드들이 많았는데 추후 리팩토링을 통해 수정했습니다.
 
 ### ✔️ 정렬 및 배열시 flex, position 사용
 ![](https://velog.velcdn.com/images/eun0leee/post/d6d607ec-c82b-4b2a-b042-63aa7ab701c5/image.png)
