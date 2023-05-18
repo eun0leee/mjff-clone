@@ -4,8 +4,8 @@ HTML과 CSS, JS 를 공부하며 익숙해지기 위해, 평소 관심있어하�
 
 ## 🎞️ 사이트
 
-- [무주산골영화제 사이트](https://www.mjff.or.kr/)
-- [배포 사이트](https://mjffclone.netlify.app)
+- [Muju Film Festival Site](https://www.mjff.or.kr/)
+- [Demo Site](https://mjffclone.netlify.app)
 
 ## 🎞️ 기술스택
 
