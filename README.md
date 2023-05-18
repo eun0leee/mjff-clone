@@ -11,7 +11,7 @@ HTML과 CSS, JS 를 공부하며 익숙해지기 위해, 평소 관심있어하�
 
 <img alt="Html" src ="https://img.shields.io/badge/HTML-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="CSS3" src ="https://img.shields.io/badge/CSS3-FF9933.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/>
 
-## 🎞️ 구현기능
+## 🎞️ 구현내용
 ### 🥤 반응형
 ![](https://velog.velcdn.com/images/eun0leee/post/ab3c718d-dc99-40f0-985c-70495f7ab959/image.gif)
 - 1024px 이하면 Main Navigation 바를 숨기고, 햄버거 버튼이 등장합니다. media query를 사용하여 구현했습니다.
